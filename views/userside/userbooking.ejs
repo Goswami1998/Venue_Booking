@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<!--
+**********************************************************************************************************
+    Copyright (c) 2017 .
+**********************************************************************************************************  -->
+<!-- 
+Template Name: Weddlist — Wedding Vendor Directory HTML Template
+Version: 1.0.0
+Author: udayraj
+-->
+<!--[if IE 8]> <html lang="en" class="ie8 no-js"> <![endif]-->
+<!--[if IE 9]> <html lang="en" class="ie9 no-js"> <![endif]-->
+<!--[if !IE]> -->
+<html lang="en">
+<!-- <![endif]-->
+<!-- head -->
+
+<!-- Mirrored from thegenius.co/html/weddlist/version-1/vendor-profile.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 24 Jan 2024 05:32:58 GMT -->
+<head>
+<title>Weddlist — Wedding Vendor Directory HTML Template</title>
+<meta charset="utf-8" />
+<meta content="width=device-width, initial-scale=1.0" name="viewport" />
+<meta name="description" content="Weddlist" />
+<meta name="keywords" content="wedding, wedding vendor, wedding vendor directory, HTML template, html theme, wedding html template, wedding html theme, weddlist, weddlist html, weddlist html template">
+<meta name="author" content="udayraj" />
+<meta name="MobileOptimized" content="320" />
+<link href="uside/images/favicon.ico" rel="icon" type="image/x-icon"/> <!-- favicon -->
+<!-- theme style -->
+<link href="uside/css/bootstrap.min.css" rel="stylesheet" type="text/css"/> <!-- bootstrap css -->
+<link href="uside/css/font-awesome.min.css" rel="stylesheet" type="text/css"/> <!-- fontawesome css -->
+<link href="https://fonts.googleapis.com/css?family=Lora:400,400i,700,700i" rel="stylesheet"> <!-- google fonts -->
+<link href="uside/css/menumaker.css" rel="stylesheet" type="text/css"/> <!-- menu css -->
+<link href="uside/css/owl.carousel.css" rel="stylesheet" type="text/css"/> <!-- owl carousel css -->
+<link href="uside/css/magnific-popup.css" rel="stylesheet" type="text/css"/> <!-- magnify popup css -->
+<link href="uside/css/datepicker.css" rel="stylesheet" type="text/css"/> <!-- datepicker css -->
+<link href="uside/css/flaticon.css" rel="stylesheet" type="text/css"/> <!-- flaticon css -->
+<link href="uside/css/style.css" rel="stylesheet" type="text/css"/> <!-- custom css -->
+<link href="uside/css/stucture.css" rel="stylesheet" type="text/css"/> <!-- stucture css -->
+<!-- end theme style -->
+</head>
+<!-- end head -->
+<!--body start-->
+<body>
+<!-- preloader --> 
+
+<!-- end preloader --> 
+<!--  top bar -->
+  <section class="top-nav-info">
+    <div class="container">
+     
+      <!-- search -->
+      <div class="search">
+        <div class="container">
+          <input type="search" class="search-box" placeholder="Search"/>
+          <a href="#" class="fa fa-times search-close"></a>
+        </div>
+      </div>
+      <!-- end search -->
+
+    </div>
+  </section>
+<!--  end top bar -->
+<!--  navigation -->
+ <%- include('userheader') %>
+<!--  end navigation -->
+<!-- page banner -->
+  <section id="page-banner" class="page-banner" style="background-image: url('uside/images/banner.jpg');"> 
+    <div class="overlay-bg"></div>
+    <div class="container">
+      <div class="banner-dtl text-center">
+        <h2 class="banner-heading">Vendor Profile</h2>
+        <div class="breadcrumb-block">
+          <ol class="breadcrumb">
+            <li><a href="index.html">Home</a></li>
+            <li class="active">Vendor Profile</li>
+          </ol>
+        </div>
+      </div>
+    </div>
+  </section>
+<!-- end page banner -->
+<!-- vendor profile -->
+  <section id="vendor-profile" class="vendor-profile-main-page">
+    <div class="container">
+   
+        <div class="container">
+        <div class="col-md-4  " style="margin-left: 33%;">
+          <div class="vendor-enquery-block">
+            <h4 class="vendor-enquery-heading">Send Enquiry To Vendor</h4>
+            <p class="vendor-enquery-sub-heading">Fill in your details and a venue specialist will get back to you shortly</p>
+            <div class="form-group">
+              <form  action="bookingprocess" method="post">
+                <input type="text" class="form-control" id="name" name="name" placeholder="Your Name *"/>
+                <input type="email" class="form-control" id="email" name="email" placeholder="Email Address *"/>
+                <input type="number" class="form-control" id="phone" name="phone" placeholder="Phone *"/>
+                <div class="date-picker">
+                  <input type="date" class="form-control date-pick" name="date" placeholder="Wedding Date"/>
+                  <!-- <label><i class="fa fa-calendar" aria-hidden="true"></i></label> -->
+                </div>
+             
+               
+                <button type="submit" class="btn btn-pink">Book My Venue Now</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+
+   
+    </div>
+  </section>
+<!-- end vendor profile -->
+<!-- footer -->
+  <div id="footer" class="footer-main-block">
+    <div class="container">
+      <div class="footer-block">
+        <div class="row">
+          <div class="col-md-4 col-sm-6">
+            <div class="about-widget footer-widget">
+              <h4 class="footer-heading">About Weddlist</h4>
+              <div class="about-dtl">
+                <p>Sed ut perspiciatis unde omnis iste natus error volup tatem.</p>
+                <p>Ut enim ad minima veniam, quis nostrum exercitationem ullam cor poris suscipit labo riosam.</p>
+                <a href="#" class="btn btn-white">Find a Vendor</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-5 col-sm-6">
+            <div class="news-widget footer-widget">
+              <h4 class="footer-heading">Latest News</h4>
+              <ul>
+                <li>
+                  <div class="row"> 
+                    <div class="col-xs-3">
+                      <div class="latest-news-img">
+                        <img src="images/footer-news-1.jpg" class="img-responsive" alt="news">
+                      </div>
+                    </div>
+                    <div class="col-xs-9">
+                      <div class="latest-news-dtl">
+                        <a href="blog-detail.html">Sed ut perspiciatis unde omnis is te natus error sit volup</a>
+                        <div class="date">March 22, 2017</div>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="row"> 
+                    <div class="col-xs-3">
+                      <div class="latest-news-img">
+                        <img src="images/footer-news-2.jpg" class="img-responsive" alt="news">
+                      </div>
+                    </div>
+                    <div class="col-xs-9">
+                      <div class="latest-news-dtl">
+                        <a href="blog-detail.html">Excepteur sint occaecat cupidatat non proident,</a>
+                        <div class="date">March 21, 2017</div>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="subscribe-widget footer-widget">
+              <h4 class="footer-heading">Subscribe Newsletter</h4>
+              <form id="subscribe-form" class="subscribe-form">
+                <div class="form-group"> 
+                  <input type="email" id="mc-email" class="form-control" placeholder="EMAIL ADDRESS">
+                  <button type="submit" class="btn btn-white">Subscribe Now</button>
+                  <label for="mc-email"></label>
+                </div>
+              </form>
+              <ul class="social-btns">
+                <li><a class="btn facebook" href="https://www.facebook.com/" target="_blank"><i class="fa fa-facebook"></i></a></li>
+                <li><a class="btn twitter" href="https://www.twitter.com/" target="_blank"><i class="fa fa-twitter"></i></a></li>
+                <li><a class="btn pinterest" href="https://www.pinterest.com/" target="_blank"><i class="fa fa-pinterest"></i></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="copyright-block text-center">
+      <div class="container">
+        <p>&copy; 2017 All rights reserved.</p>
+      </div>
+    </div>
+  </div>
+<!-- end footer -->
+<!-- jquery -->
+<script type="text/javascript" src="js/jquery.min.js"></script>  <!-- jquery library js -->
+<script type="text/javascript" src="js/bootstrap.min.js"></script> <!-- bootstrap js -->
+<script type="text/javascript" src="js/owl.carousel.js"></script> <!-- owl carousel js -->
+<script type="text/javascript" src="js/jquery.ajaxchimp.js"></script> <!-- mail chimp js -->
+<script type="text/javascript" src="js/smooth-scroll.js"></script> <!-- smooth scroll js -->
+<script type="text/javascript" src="js/jquery.magnific-popup.min.js"></script> <!-- magnify popup js --> 
+<script type="text/javascript" src="js/waypoints.min.js"></script> <!-- facts count js required for jquery.counterup.js file -->
+<script type="text/javascript" src="js/jquery.counterup.js"></script> <!-- facts count js-->
+<script type="text/javascript" src="js/menumaker.js"></script> <!-- menu js--> 
+<script type="text/javascript" src="js/jquery.share-tooltip.js"></script> <!-- share tooltip js--> 
+<script type="text/javascript" src="js/price-slider.js"></script> <!-- price slider / filter js-->
+<script type="text/javascript" src="js/bootstrap-datepicker.js"></script> <!-- datepicker js-->
+<script type="text/javascript" src="js/theme.js"></script> <!-- custom js -->  
+<!-- end jquery -->
+</body>
+<!--body end -->
+
+<!-- Mirrored from thegenius.co/html/weddlist/version-1/vendor-profile.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 24 Jan 2024 05:33:27 GMT -->
+</html>

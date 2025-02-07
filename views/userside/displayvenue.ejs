@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<!--
+**********************************************************************************************************
+    Copyright (c) 2017 .
+**********************************************************************************************************  -->
+<!-- 
+Template Name: Weddlist — Wedding Vendor Directory HTML Template
+Version: 1.0.0
+Author: udayraj
+-->
+<!--[if IE 8]> <html lang="en" class="ie8 no-js"> <![endif]-->
+<!--[if IE 9]> <html lang="en" class="ie9 no-js"> <![endif]-->
+<!--[if !IE]> -->
+<html lang="en">
+<!-- <![endif]-->
+<!-- head -->
+
+<!-- Mirrored from thegenius.co/html/weddlist/version-1/real-wedding-single-listing.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 24 Jan 2024 05:33:34 GMT -->
+<head>
+<title>Weddlist — Wedding Vendor Directory HTML Template</title>
+<meta charset="utf-8" />
+<meta content="width=device-width, initial-scale=1.0" name="viewport" />
+<meta name="description" content="Weddlist" />
+<meta name="keywords" content="wedding, wedding vendor, wedding vendor directory, HTML template, html theme, wedding html template, wedding html theme, weddlist, weddlist html, weddlist html template">
+<meta name="author" content="udayraj" />
+<meta name="MobileOptimized" content="320" />
+<link href="../uside/images/favicon.ico" rel="icon" type="image/x-icon"/> <!-- favicon -->
+<!-- theme style -->
+<link href="../uside/css/bootstrap.min.css" rel="stylesheet" type="text/css"/> <!-- bootstrap css -->
+<link href="../uside/css/font-awesome.min.css" rel="stylesheet" type="text/css"/> <!-- fontawesome css -->
+<link href="https://fonts.googleapis.com/css?family=Lora:400,400i,700,700i" rel="stylesheet"> <!-- google fonts -->
+<link href="../uside/css/menumaker.css" rel="stylesheet" type="text/css"/> <!-- menu css -->
+<link href="../uside/css/owl.carousel.css" rel="stylesheet" type="text/css"/> <!-- owl carousel css -->
+<link href="../uside/css/magnific-popup.css" rel="stylesheet" type="text/css"/> <!-- magnify popup css -->
+<link href="../uside/css/datepicker.css" rel="stylesheet" type="text/css"/> <!-- datepicker css -->
+<link href="../uside/css/flaticon.css" rel="stylesheet" type="text/css"/> <!-- flaticon css -->
+<link href="../uside/css/share-tooltip.css" rel="stylesheet" type="text/css"/><!-- share tooltip css -->
+<link href="../uside/css/style.css" rel="stylesheet" type="text/css"/> <!-- custom css -->
+<link href="../uside/css/stucture.css" rel="stylesheet" type="text/css"/> <!-- stucture css -->
+<!-- end theme style -->
+</head>
+<!-- end head -->
+<!--body start-->
+<body>
+ 
+<!--  top bar -->
+  <section class="top-nav-info">
+    <div class="container">
+  
+      <!-- search -->
+
+      <!-- end search -->
+      <!-- login popup -->
+ 
+      <!-- end login popup -->
+      <!-- register popup -->
+    
+      <!-- end register popup -->
+    </div>
+  </section>
+<!--  end top bar -->
+<!--  navigation -->
+<header id="nav-bar" class="nav-bar" style="background-color: thistle;">
+	<div class="container">
+		<div class="row"> 
+			<div class="col-md-2 col-sm-3">
+				
+
+			</div>
+			<div class="col-md-10 col-sm-9">
+				<div class="navigation">
+					<div id="cssmenu">
+						<ul class="css-menu">
+							<li class="active"><a href="../userside">Home</a>
+							</li>
+
+							<li class="venue"><a href="../menu">Venue<i class="" aria-hidden=""></i></a>
+							</li>
+
+							<li><a href="../about">About<i class="" aria-hidden="true"></i></a>
+							</li>
+							
+							<li><a href="../contact">Contact<i class=""></i></a>
+							</li>
+
+							<li><a href="../userlogin">Login</a></li>
+							<li><a href="../usersignup">SignUp</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</header>
+<!--  end navigation -->
+<!-- page banner -->
+  <section id="page-banner" class="page-banner" style="background-image: url('../uside/images/banner.jpg');"> 
+    <div class="overlay-bg"></div>
+    <div class="container">
+      <div class="banner-dtl text-center">
+        <h2 class="banner-heading">Real Wedding Single Listing</h2>
+        <div class="breadcrumb-block">
+          <ol class="breadcrumb">
+            <li><a href="index.html">Home</a></li>
+            <li class="active">Real Wedding Single Listing</li>
+          </ol>
+        </div>
+      </div>
+    </div>
+  </section>
+<!-- end page banner -->
+<!-- real wedding single listing -->
+  <section id="real-wedding-single-listing" class="real-wedding-single-listing">
+    <div class="container">
+      <div class="real-wedding-single-listing-block">
+        <div class="row">
+          <div class="col-md-9">
+       
+            <div  class="real-wedding-single-listing-img">
+              <img src="/upload/<%= mydata.venuepic %>" style="width: 1000px; height: 400px;"  class="img-responsive" alt="real-couple">
+              <div class="overlay-bg"></div>
+              <div class="real-weddding-couple">
+                  <h3 class="couple-name">Caitlin &amp; Hentze</h3>
+               </div>
+           </div>
+
+                  <div class="blog-latest-news real-wedding-latest-news"> 
+                  <strong><label for="">Detail:-</label></strong>
+                  <p><%= mydata.detail %></p>
+                  <strong> <label for="">
+                    Price:-</label></strong>  
+                  <p><%= mydata.price %> </p>          
+                 </div>
+
+                 <form action="../bookmark" method="post" enctype="multipart/form-data">
+                  <input type="hidden" class="form-control" id="id" name="id"  value="<%=mydata._id%>" readonly>
+                  <input type="hidden" class="form-control" id="image" name="image"  value="<%=mydata.venuepic%>" readonly>
+                  <input type="hidden" class="form-control" id="title" name="title"  value="<%=mydata.title%>" readonly>
+                  <input type="hidden" class="form-control" id="price" name="price"  value="<%=mydata.price%>" readonly>
+                  <button  type="submit" class="btn btn-m btn-success">BOOK MARK</button>
+                </form>
+                
+                 
+                 
+                 <button class="btn btn-primary" 
+                 style="margin-top: 30px; margin-left: 20px; background-color: cornflowerblue"> 
+                 <a href="/userbooking" style="text-decoration-style: double; color: whitesmoke;"> Book My Venue</a>
+                </button> 
+                
+               
+                
+              
+
+               
+            <div class="blog-comments comments">
+              <h3 class="blog-main-hedaing">Comments</h3>
+              <div class="media">
+                <ul>
+                  <li>
+                    <div class="media-left">
+                      <a href="#">
+                        <img class="media-object" src="../uside/images/blog-single-page/blog-comment-1.jpg" alt="media-img">
+                      </a>
+                    </div>
+                    <div class="media-body">
+                      <h6 class="media-heading">Micheal Doe</h6>
+                      <div class="date">March 13,  2017 At 9:30 Am</div>
+                      <p>Adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p>
+                      <a href="#" class="btn btn-reply">reply</a>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="media-left">
+                      <a href="#">
+                        <img class="media-object" src="../uside/images/blog-single-page/blog-comment-2.jpg" alt="media-img">
+                      </a>
+                    </div>
+                    <div class="media-body">
+                      <h6 class="media-heading">Elina Doe</h6>
+                      <div class="date">March 12,  2017 At 5:30 Pm</div>
+                      <p>Adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p>
+                      <a href="#" class="btn btn-reply">reply</a>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="media-left">
+                      <a href="#">
+                        <img class="media-object" src="../uside/images/blog-single-page/blog-comment-3.jpg" alt="media-img">
+                      </a>
+                    </div>
+                    <div class="media-body">
+                      <h6 class="media-heading">William Doe</h6>
+                      <div class="date">March 12,  2017 At 4:00 Pm</div>
+                      <p>Adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p>
+                      <a href="#" class="btn btn-reply">reply</a>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+        
+          </div>
+          <div class="col-md-3">
+            <div class="blog-sidebar">
+              <div class="widget blog-search text-right">
+                <form>
+                  <input type="search" id="search" class="form-control" placeholder="Enter Keyword">
+                  <button type="button" class="btn btn-pink">Go</button>
+                </form>
+              </div>
+              <div class="blog-latest-news real-wedding-latest-news">
+                <h4 class="blog-sidebar-heading">Related Real Wedding</h4>
+                <div class="blog-news">
+                  <div class="blog-news-img rtd-real-wedd-img">
+                    <img src="../uside/images/blog-page/latest-news-2.jpg" class="img-responsive" alt="latest-news">
+                  </div>
+                  <div class="blog-news-dtl rtd-real-wedd-dtl">
+                    <a href="#">Caitlin &amp; Isabella</a>
+                    <div class="date">March 11, 2017</div>
+                  </div>
+                </div>
+                <div class="blog-news">
+                  <div class="blog-news-img rtd-real-wedd-img">
+                    <img src="../uside/images/blog-page/latest-news-3.jpg" class="img-responsive" alt="latest-news">
+                  </div>
+                  <div class="blog-news-dtl rtd-real-wedd-dtl">
+                    <a href="#">Jon &amp; Sean</a>
+                    <div class="date">March 20, 2017</div>
+                  </div>
+                </div>
+                <div class="blog-news">
+                  <div class="blog-news-img rtd-real-wedd-img">
+                    <img src="../uside/images/blog-page/latest-news-1.jpg" class="img-responsive" alt="latest-news">
+                  </div>
+                  <div class="blog-news-dtl rtd-real-wedd-dtl">
+                    <a href="#">Sams &amp; Mariya </a>
+                    <div class="date">March 25, 2017</div>
+                  </div>
+                </div>
+              </div>
+              <div class="blog-latest-news real-wedding-latest-news">
+                <h4 class="blog-sidebar-heading">Related Wedding</h4>
+                <div class="blog-news">
+                  <div class="blog-news-img">
+                    <img src="../uside/images/blog-page/latest-news-1.jpg" class="img-responsive" alt="latest-news">
+                  </div>
+                  <div class="blog-news-dtl">
+                    <a href="#">Lewers &amp; Isabella</a>
+                    <div class="date">March 13, 2017</div>
+                  </div>
+                </div>
+                <div class="blog-news">
+                  <div class="blog-news-img">
+                    <img src="../uside/images/blog-page/latest-news-2.jpg" class="img-responsive" alt="latest-news">
+                  </div>
+                  <div class="blog-news-dtl">
+                    <a href="#">Caitlin &amp; Hentze</a>
+                    <div class="date">March 13, 2017</div>
+                  </div>
+                </div>
+                <div class="blog-news">
+                  <div class="blog-news-img">
+                    <img src="../uside/images/blog-page/latest-news-3.jpg" class="img-responsive" alt="latest-news">
+                  </div>
+                  <div class="blog-news-dtl">
+                    <a href="#">Castleton &amp; Sean</a>
+                    <div class="date">March 13, 2017</div>
+                  </div>
+                </div>
+              </div>
+              <div class="popular-tab">
+                <h4 class="blog-sidebar-heading">Popular Tags</h4>
+                <div class="tabs">
+                  <a href="#" class="btn btn-default"><span class="badge">Transport</span></a>
+                  <a href="#" class="btn btn-default"><span class="badge">Venue</span></a>
+                  <a href="#" class="btn btn-default"><span class="badge">Dress</span></a>
+                  <a href="#" class="btn btn-default"><span class="badge">Jewelery</span></a>
+                  <a href="#" class="btn btn-default"><span class="badge">Photography</span></a>
+                </div>  
+              </div>
+              <div class="widget our-archives">
+                <h4 class="blog-sidebar-heading">Our Archives</h4>
+                <ul>
+                  <li><a href="#">April<span>(05)</span></a></li>
+                  <li><a href="#">March<span>(13)</span></a></li>
+                  <li><a href="#">January<span>(07)</span></a></li>
+                  <li><a href="#">December<span>(02)</span></a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+<!-- end real wedding single listing -->
+<!-- footer -->
+  <div id="footer" class="footer-main-block">
+    <div class="container">
+      <div class="footer-block">
+        <div class="row">
+          <div class="col-md-4 col-sm-6">
+            <div class="about-widget footer-widget">
+              <h4 class="footer-heading">About Weddlist</h4>
+              <div class="about-dtl">
+                <p>Sed ut perspiciatis unde omnis iste natus error volup tatem.</p>
+                <p>Ut enim ad minima veniam, quis nostrum exercitationem ullam cor poris suscipit labo riosam.</p>
+                <a href="#" class="btn btn-white">Find a Vendor</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-5 col-sm-6">
+            <div class="news-widget footer-widget">
+              <h4 class="footer-heading">Latest News</h4>
+              <ul>
+                <li>
+                  <div class="row"> 
+                    <div class="col-xs-3">
+                      <div class="latest-news-img">
+                        <img src="../uside/images/footer-news-1.jpg" class="img-responsive" alt="news">
+                      </div>
+                    </div>
+                    <div class="col-xs-9">
+                      <div class="latest-news-dtl">
+                        <a href="blog-detail.html">Sed ut perspiciatis unde omnis is te natus error sit volup</a>
+                        <div class="date">March 22, 2017</div>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="row"> 
+                    <div class="col-xs-3">
+                      <div class="latest-news-img">
+                        <img src="../uside/images/footer-news-2.jpg" class="img-responsive" alt="news">
+                      </div>
+                    </div>
+                    <div class="col-xs-9">
+                      <div class="latest-news-dtl">
+                        <a href="blog-detail.html">Excepteur sint occaecat cupidatat non proident,</a>
+                        <div class="date">March 21, 2017</div>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="subscribe-widget footer-widget">
+              <h4 class="footer-heading">Subscribe Newsletter</h4>
+              <form id="subscribe-form" class="subscribe-form">
+                <div class="form-group"> 
+                  <input type="email" id="mc-email" class="form-control" placeholder="EMAIL ADDRESS">
+                  <button type="submit" class="btn btn-white">Subscribe Now</button>
+                  <label for="mc-email"></label>
+                </div>
+              </form>
+              <ul class="social-btns">
+                <li><a class="btn facebook" href="https://www.facebook.com/" target="_blank"><i class="fa fa-facebook"></i></a></li>
+                <li><a class="btn twitter" href="https://www.twitter.com/" target="_blank"><i class="fa fa-twitter"></i></a></li>
+                <li><a class="btn pinterest" href="https://www.pinterest.com/" target="_blank"><i class="fa fa-pinterest"></i></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="copyright-block text-center">
+      <div class="container">
+        <p>&copy; 2017 All rights reserved.</p>
+      </div>
+    </div>
+  </div>
+<!-- end footer -->
+<!-- jquery -->
+<script type="text/javascript" src="js/jquery.min.js"></script>  <!-- jquery library js -->
+<script type="text/javascript" src="js/bootstrap.min.js"></script> <!-- bootstrap js -->
+<script type="text/javascript" src="js/owl.carousel.js"></script> <!-- owl carousel js -->
+<script type="text/javascript" src="js/jquery.ajaxchimp.js"></script> <!-- mail chimp js -->
+<script type="text/javascript" src="js/smooth-scroll.js"></script> <!-- smooth scroll js -->
+<script type="text/javascript" src="js/jquery.magnific-popup.min.js"></script> <!-- magnify popup js --> 
+<script type="text/javascript" src="js/waypoints.min.js"></script> <!-- facts count js required for jquery.counterup.js file -->
+<script type="text/javascript" src="js/jquery.counterup.js"></script> <!-- facts count js-->
+<script type="text/javascript" src="js/menumaker.js"></script> <!-- menu js--> 
+<script type="text/javascript" src="js/jquery.share-tooltip.js"></script> <!-- share tooltip js--> 
+<script type="text/javascript" src="js/price-slider.js"></script> <!-- price slider / filter js-->
+<script type="text/javascript" src="js/bootstrap-datepicker.js"></script> <!-- datepicker js--> 
+<script type="text/javascript" src="js/theme.js"></script> <!-- custom js -->  
+<!-- end jquery -->
+</body>
+<!--body end -->
+
+<!-- Mirrored from thegenius.co/html/weddlist/version-1/real-wedding-single-listing.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 24 Jan 2024 05:33:35 GMT -->
+</html>

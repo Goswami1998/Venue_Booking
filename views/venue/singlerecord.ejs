@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Single Record</title>
+</head>
+<body>
+    <h2><center>Single Record</center></h2>
+    <table border="5" style="border-color: red; border-radius: 5px;" >
+    
+     
+        
+            <tr style="padding: 10px;">
+                <th>Id</th>
+                <th>Title</th>
+                <th>Detail</th>
+                <th>Price</th>
+                <th>Category</th>
+            </tr>
+      
+            <tr style="padding: 10px;">            
+                <td><%= vdata._id %></td>
+                <td><%= vdata.title %></td>
+                <td><%= vdata.detail %></td>
+                <td><%= vdata.price %></td>
+                <td><%= vdata.category %></td>
+            </tr>
+                     
+
+    </table>
+</body>
+</html>
